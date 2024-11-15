@@ -13,15 +13,11 @@ body {
 /* Estilos para el header */
 header {
     position: sticky;
-    top: 0; /* Se mantiene en la parte superior */
-    z-index: 1000; /* Asegura que esté encima de otros elementos */
+    top: 0;
+    z-index: 1000;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
-    background-image: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-    ),
-    url("fotos/pexels-markusspiske-2004161.jpg");
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("fotos/pexels-markusspiske-2004161.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -54,17 +50,7 @@ header img {
     background-color: transparent;
     font-family: "Roboto", sans-serif;
     font-size: large;
-}
-
-.menuitem button {
-    font-size: 15px;
-    line-height: 30px;
-    position: relative;
-    margin: 0 24px;
-    text-transform: uppercase;
-    border: none;
     color: rgb(7, 7, 7);
-    background-color: transparent;
     cursor: pointer;
     transition: border 0.2s;
 }
@@ -76,7 +62,6 @@ header img {
 
 .menuitem a {
     font-weight: bold;
-    font-family: "Roboto", sans-serif;
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
@@ -89,6 +74,7 @@ body .perfil img {
     border-radius: 50%;
     width: 15%;
     margin-bottom: 5%;
+    object-fit: cover;
 }
 
 body .perfil {
@@ -100,7 +86,8 @@ body .perfil p {
     font-family: "Roboto", sans-serif;
     margin-top: 10%;
     margin-left: 2%;
-    color:#fff;
+    color: #fff;
+    font-size: 1rem;
 }
 
 /* Estilos para el contenedor de conocimientos */
@@ -175,12 +162,12 @@ body .Conocimientos {
 }
 
 /* Lista Experiencia */
-#Experiencia li{
+#Experiencia li {
     font-size: large;
-    font-style: "roboto";
+    font-style: "Roboto";
     padding: 1%;
     color: #fff;
-    list-style:circle;
+    list-style: circle;
 }
 
 /* Estilos para el footer */
@@ -248,31 +235,84 @@ footer li img:hover {
     transform: scale(1.2);
 }
 
+/* Estilo del formulario */
+.form-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+/* Estilo para cada grupo de formulario */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Estilo para las etiquetas */
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para los campos de entrada */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Estilo para el botón de envío */
+.submit-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
 /* Diseño responsivo: Ajustes en pantallas pequeñas */
 @media (max-width: 768px) {
-    /* Diseño responsivo: Footer */
-    footer {
-        padding: 20px 0;
+    .menuitem {
+        flex-direction: column;
+        align-items: center;
+        padding-right: 2%;
+        margin-left: 0;
+    }
+
+    .menuitem li {
+        margin-left: 0;
+        margin-bottom: 10px;
     }
 
     footer ul {
-        align-items: center;
+        flex-direction: column;
     }
 
     footer li {
         margin-bottom: 15px;
     }
 
-    footer li:last-child {
-        margin-bottom: 0;
+    .carousel-item {
+        width: 100%;
     }
-
-    /* Diseño responsivo: Header */
-
-    .menuitem{
-        flex-direction: column;
-        padding-right: 2%;
-        
-    }
-    
 }

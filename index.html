@@ -15,7 +15,7 @@
     </div>
     <div class="Menu">
         <ul class="menuitem">
-            <li><button><a href="index.html">Inico</a></button></li>
+            <li><button><a href="index.html">Inicio</a></button></li>
             <li><button><a href="#Conocimientos">Conocimientos</a></button></li>
             <li><button><a href="#Experiencia">Experiencia</a></button></li>
         </ul>
@@ -35,24 +35,19 @@
 
     <div class="carousel-container">
         <div class="carousel">
-            <!-- Imagen 1 con enlace -->
             <a href="https://www.ejemplo1.com" class="carousel-item">
                 <img src="fotos/web-development.jpg" alt="Imagen 1">
             </a>
-            <!-- Imagen 2 con enlace -->
             <a href="https://github.com/Facundofer/Curso-Base-de-datos" class="carousel-item">
                 <img src="fotos/php-proyect.jpg" alt="Imagen 2">
             </a>
-            <!-- Imagen 3 con enlace -->
             <a href="https://github.com/Facundofer/Programacion2" class="carousel-item">
                 <img src="fotos/Programin-in-c.jpeg" alt="Imagen 3">
             </a>
         </div>
-        <!-- Controles del carrusel -->
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
-    <script src="script.js"></script>
 
     <div class="Conocimientos" id="Conocimientos">
         <img src="fotos/c-14-11-2024.png" alt="C">
@@ -63,22 +58,40 @@
         <img src="fotos/Mantenimiento-Hardware-y-14-11-2024.png" alt="hardware">
     </div>
     
-
     <div id="Experiencia">
         <ul>
-            <li>Profesor particular de Informatica</li>
-            <li>Mantenimiento de hardware y sofeare en el Instituto parroquial nuestra señora de pilar</li>
-            <li>Mantenimiento de hardware y sofware en la Universidad Nacional de Lujan</li>
+            <li>Profesor particular de Informática</li>
+            <li>Mantenimiento de hardware y software en el Instituto Parroquial Nuestra Señora de Pilar</li>
+            <li>Mantenimiento de hardware y software en la Universidad Nacional de Luján</li>
         </ul>
+    </div>
+
+    <div class="form-container">
+        <h2>Formulario de Contacto</h2>
+        <form id="contact-form" action="enviado.html">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ingresa tu correo" required>
+            </div>
+            <div class="form-group">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" placeholder="Escribe tu comentario" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Enviar</button>
+        </form>
     </div>
 </body>
 
 <footer>
     <div class="contacto">
         <ul>
-            <li><a href="https://www.instagram.com/facufer30/"><img src="fotos/logotipo-de-instagram.png" alt=""></a></li>
-            <li><img src="fotos/llamar.png" alt="">2304348154</li>
-            <li><form action="" method="get"><img src="fotos/correo-electronico.png" alt=""> </form></li>
+            <li><a href="https://www.instagram.com/facufer30/"><img src="fotos/logotipo-de-instagram.png" alt="Instagram"></a></li>
+            <li><img src="fotos/llamar.png" alt="Llamar">2304348154</li>
+            <li><img src="fotos/correo-electronico.png" alt="Correo Electrónico"></li>
         </ul>
     </div>
 </footer>
